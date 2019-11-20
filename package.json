@@ -1,0 +1,46 @@
+{
+    "name": "react-snippets",
+    "displayName": "React Snippets",
+    "description": "Collection of most common blocks of code which will help you to write your React code faster.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "activationEvents": [
+        "onCommand:extension.generateTSModule",
+        "onCommand:extension.generateJSModule"
+    ],
+    "main": "./src/index.js",
+    "contributes": {
+        "commands": [
+			{
+				"command": "extension.generateTSModule",
+                "title": "Generate TS React Module"
+			},
+			{
+				"command": "extension.generateJSModule",
+                "title": "Generate JS React Module"
+			}
+        ],
+        "menus": {
+            "explorer/context": [{
+                "command": "extension.generateTSModule"
+            }, {
+                "command": "extension.generateJSModule"
+            }]
+        },
+        "snippets": [
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/snippets.tsreact.json"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/snippets.js.json"
+            }
+        ]
+    }
+}

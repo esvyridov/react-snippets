@@ -1,0 +1,48 @@
+{
+	"Import React": {
+    "prefix": ["ir"],
+    "body": [
+			"import React from 'react';",
+			"$0"
+		],
+    "description": "Import React Library"
+	},
+	"Import Style Module": {
+		"prefix": ["ism"],
+		"body": [
+			"import styles from './$TM_FILENAME_BASE.module.css';",
+			"$0"
+		],
+		"description": "Import CSS Module for current React component"
+	},
+	"Create Functional Component": {
+		"prefix": ["cfc"],
+		"body": [
+			"const ${1} = () => {",
+			"\treturn (",
+			"\t\t${0}",
+			"\t)",
+			"}",
+			"",
+			"export default ${1};"
+		],
+		"description": "Create empty Functional Component with export"
+	},
+	"Add useState Hook": {
+		"prefix": ["ash"],
+		"body": [
+			"const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState(${2});",
+			"$0"
+		],
+		"description": "Add useState hook"
+	},
+	"Add useEffect Hook": {
+		"prefix": ["aeh"],
+		"body": [
+			"useEffect(() => {",
+			"\t$0",
+			"}, [${1}]);"
+		],
+		"description": "Add useEffect hook"
+	}
+}

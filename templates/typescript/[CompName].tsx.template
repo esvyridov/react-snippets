@@ -1,0 +1,10 @@
+import React from 'react';
+import styles from './[CompName].module.css';
+
+const [CompName] = () => {
+  return (
+    <></>
+  )
+}
+
+export default [CompName];
