@@ -12,16 +12,30 @@ Do not forget to turn on support for tab-completion. Enable it with "editor.tabC
 
 ## Extension
 
-### React Module Generator
+### React Module Generator 
 
-Right Click On File Explorer -> Generate TS React Module -> Enter Component Name. 
+Right Click On File Explorer -> Generate TS / JS React Module -> Enter Component Name. 
 
-Component Folder Structure:
+Generated Component Folder Structures:
+
+#### Typescript
+
 
 ```
 [name]                   # Component Folder
 ├── index.ts             # index module
 ├── [name].tsx           # Component
+└── [name].module.css    # CSS Module
+```
+
+#### Javascript
+
+Component Folder Structure:
+
+```
+[name]                   # Component Folder
+├── index.js             # index module
+├── [name].jsx           # Component
 └── [name].module.css    # CSS Module
 ```
 
